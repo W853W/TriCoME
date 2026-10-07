@@ -97,19 +97,6 @@ The form administers initial delivery and acknowledgment of the license and sour
 
 Copyright and related rights in the recordings remain with their respective rights holders. The annotation license does not grant rights in the underlying video, audio, images, or original dialogue reproduced in transcripts.
 
-## Evaluation and Reported Reference Results
-
-The manuscript evaluates three-class recognition using **16-fold LOSO-CV**. In each fold, one subject is held out for testing and the remaining subjects are used for training. Accuracy and unweighted F1 (UF1, macro-averaged across the three emotion classes) are reported.
-
-| Configuration | Input | Accuracy (%) | UF1 (%) |
-| --- | --- | --- | --- |
-| MMNet (adapted) | Vision only | 82.96 | 77.87 |
-| HFFNet with fixed-threshold routing | Vision, audio, text, and role-annotated context | 85.89 | 83.26 |
-
-These are results reported in the accompanying manuscript. **MMNet (adapted)** is the task-adapted visual implementation evaluated in HFFNet's `visual_only` mode. The HFFNet configuration uses a fixed routing threshold of 0.8. Training and evaluation details are given in the manuscript.
-
-HFFNet combines audio-text interaction and sequence compression with context-type embeddings, feature gating, and visual-confidence-based routing to regulate the contribution of conversational information.
-
 ## Citation
 
 If you use TriCoME in your research, please cite the accompanying manuscript. A public preprint or publication link will be added when available. Until then, the manuscript can be referenced as:
@@ -128,14 +115,6 @@ If you use TriCoME in your research, please cite the accompanying manuscript. A 
 The contributors' original annotations, metadata, and repository documentation are licensed under **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)**, to the extent that the contributors hold the relevant rights. See [LICENSE](LICENSE) for the scope notice and link to the governing legal text.
 
 The license permits non-commercial sharing and adaptation with appropriate attribution, a license reference, and an indication of changes. Non-commercial status depends on the intended use, not simply on the user's institutional affiliation. No permissions are granted for third-party content or privacy and personality rights that the contributors do not control.
-
-## Privacy and Correction Requests
-
-TriCoME includes manually transcribed dialogue and links to identifiable public recordings. Using subject indices does not guarantee anonymity: source faces, voices, dialogue, and recording URLs may remain identifying.
-
-Individuals featured in the source recordings, or relevant rights holders, may contact **[jbwang24@mails.jlu.edu.cn](mailto:jbwang24@mails.jlu.edu.cn)** regarding an annotation, privacy concern, or correction request. Please provide enough information to identify the recording and affected entry.
-
-The maintainers will review substantiated requests and, where appropriate, correct or remove affected entries from future releases and the copies they distribute. This cannot guarantee deletion of copies already obtained by others and does not revoke licenses already validly granted under CC BY-NC 4.0.
 
 ## Contact
 
